@@ -17,7 +17,11 @@ class _HomeState extends State<Home> {
   int _currentPage = 0;
   @override
   Widget build(BuildContext context) {
-    final List<Widget> pages = [Highlights(), FoodMenu(), DrinkMenu()];
+    final List<Widget> pages = [
+      const Highlights(),
+      const FoodMenu(),
+      const DrinkMenu()
+    ];
     return Scaffold(
       appBar: AppBar(
         title: const Text("Ristorante Panucci"),
